@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Login - LibraryApp</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>	
+
+<body>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>LibraryApp
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              Join now to make your own digital library!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class=""></div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+              <div class="login-card">
+                <form class="form-signin textfield" action="/" onsubmit="return validatepw();" >
+                  <br>
+                  <br>
+                  <label for="inputEmail" >Email address</label>
+                  <input type="email" onkeyup="return validate();" id="inputEmail" class="form-control textfield" placeholder="Enter valid email" required="" autofocus="">
+                  <p id="errorEmail"></p>
+
+
+                  <label for="password" >Password</label>
+                  <input type="password" onkeyup="return validatepw();" id="password" class="form-control textfield" placeholder="Enter password" required="">
+                  <p id="errorPassword"></label>
+                  
+                  <!-- Strength meter -->
+                  <label for="password-strength-meter"></label>
+                  <div class="progress">
+                  <meter min="0" max="4" id="password-strength-meter"></meter>
+                  </div>
+                  <p id="password-strength-text"></p>
+                  <!-- Strength meter -->
+                  
+                
+                  <label for="repeatPassword" >Confirm Password</label>
+                  <input onkeyup="check();" type="password"id="confirm_password" class="form-control textfield" placeholder="Repeat entered password" required="">
+                  <p id='message'></p>
+                  <div class="checkbox mb-3">
+                    <label>
+                      <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                  </div>
+                  <button class="btn btn-lg btn-primary btn-block" id="button-login" type="submit">Sign up</button>
+                  <p class="mt-5 mb-3 copyright-login">© 2020-2021</p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <hr>
+          
+          
+          <!--/stories-->                                        
+                                                                                
+<hr>
+
+<div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/email.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+    <script src="js/signup.js"></script>  
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
